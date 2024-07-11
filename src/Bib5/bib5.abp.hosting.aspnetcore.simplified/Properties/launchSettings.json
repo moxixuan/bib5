@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Bib5.Abp.Hosting.AspNetCore.Simplified": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:60928;http://localhost:60929"
+    }
+  }
+}

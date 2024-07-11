@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Bib5.Abp.Hosting.Microservices.Simplified</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netcoreapp8.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\bib5.abp.hosting.aspnetcore.simplified\Bib5.Abp.Hosting.AspNetCore.Simplified.csproj" />
+    <ProjectReference Include="..\bib5.abp.hosting.microservices.shared\Bib5.Abp.Hosting.Microservices.Shared.csproj" />
+  </ItemGroup>
+</Project>

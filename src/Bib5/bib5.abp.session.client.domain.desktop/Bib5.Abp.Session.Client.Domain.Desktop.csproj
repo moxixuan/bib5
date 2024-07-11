@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <AssemblyName>Bib5.Abp.Session.Client.Domain.Desktop</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp8.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <PackageReference Include="IdentityModel" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Connections.Client" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client.Core" />
+    <PackageReference Include="Volo.Abp.AutoMapper" />
+    <PackageReference Include="Volo.Abp.Core" />
+    <PackageReference Include="Volo.Abp.Ddd.Domain" />
+    <PackageReference Include="Volo.Abp.Http.Client" />
+    <PackageReference Include="Volo.Abp.Http.Client.IdentityModel" />
+    <PackageReference Include="Volo.Abp.IdentityModel" />
+    <PackageReference Include="Volo.Abp.RemoteServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\bib5.abp.core\Bib5.Abp.Core.csproj" />
+    <ProjectReference Include="..\bib5.abp.session.client.application.contracts\Bib5.Abp.Session.Client.Application.Contracts.csproj" />
+    <ProjectReference Include="..\bib5.abp.session.client.domain.shared\Bib5.Abp.Session.Client.Domain.Shared.csproj" />
+    <ProjectReference Include="..\bib5.abp.session.client.domain\Bib5.Abp.Session.Client.Domain.csproj" />
+  </ItemGroup>
+</Project>

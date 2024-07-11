@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>Bib5.Abp.Hosting.Wpf</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net8.0-windows</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+    <PackageReference Include="Volo.Abp.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\bib5.abp.hosting.dotnet.shared\Bib5.Abp.Hosting.DotNet.Shared.csproj" />
+    <ProjectReference Include="..\bib5.abp.hosting.simplified\Bib5.Abp.Hosting.Simplified.csproj" />
+    <ProjectReference Include="..\bib5.abp.hosting.windows.desktop\Bib5.Abp.Hosting.Windows.Desktop.csproj" />
+  </ItemGroup>
+</Project>

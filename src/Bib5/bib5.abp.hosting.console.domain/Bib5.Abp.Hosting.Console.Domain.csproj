@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Bib5.Abp.Hosting.Console.Domain</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netcoreapp8.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" />
+    <PackageReference Include="IdentityModel" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" />
+    <PackageReference Include="Microsoft.Extensions.Http" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+    <PackageReference Include="Microsoft.Extensions.Options" />
+    <PackageReference Include="Volo.Abp.AutoMapper" />
+    <PackageReference Include="Volo.Abp.Caching" />
+    <PackageReference Include="Volo.Abp.Core" />
+    <PackageReference Include="Volo.Abp.Ddd.Domain" />
+    <PackageReference Include="Volo.Abp.Http.Client" />
+    <PackageReference Include="Volo.Abp.Http.Client.IdentityModel" />
+    <PackageReference Include="Volo.Abp.IdentityModel" />
+    <PackageReference Include="Volo.Abp.Json.Abstractions" />
+    <PackageReference Include="Volo.Abp.MultiTenancy" />
+    <PackageReference Include="Volo.Abp.MultiTenancy.Abstractions" />
+    <PackageReference Include="Volo.Abp.ObjectMapping" />
+    <PackageReference Include="Volo.Abp.RemoteServices" />
+    <PackageReference Include="Volo.Abp.Uow" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\bib5.abp.core\Bib5.Abp.Core.csproj" />
+    <ProjectReference Include="..\bib5.abp.hosting.console.domain.shared\Bib5.Abp.Hosting.Console.Domain.Shared.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Bib5.Abp.Hosting.DotNet.Simplified</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netcoreapp8.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Autofac" />
+    <PackageReference Include="Volo.Abp.Core" />
+    <PackageReference Include="Volo.Abp.Data" />
+    <PackageReference Include="Volo.Abp.MultiTenancy" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\bib5.abp.hosting.dotnet.shared\Bib5.Abp.Hosting.DotNet.Shared.csproj" />
+    <ProjectReference Include="..\bib5.abp.hosting.shared\Bib5.Abp.Hosting.Shared.csproj" />
+    <ProjectReference Include="..\bib5.abp.hosting.simplified\Bib5.Abp.Hosting.Simplified.csproj" />
+  </ItemGroup>
+</Project>

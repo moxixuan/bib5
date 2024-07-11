@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Bib5.Abp.Session.Client.Domain.LocalServer</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netcoreapp8.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AutoMapper" />
+    <PackageReference Include="Volo.Abp.Core" />
+    <PackageReference Include="Volo.Abp.Ddd.Domain" />
+    <PackageReference Include="Volo.Abp.Http.Client.IdentityModel.Web" />
+    <PackageReference Include="Volo.Abp.Security" />
+    <PackageReference Include="Volo.Abp.Uow" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\bib5.abp.session.client.domain.shared\Bib5.Abp.Session.Client.Domain.Shared.csproj" />
+    <ProjectReference Include="..\bib5.abp.session.client.domain\Bib5.Abp.Session.Client.Domain.csproj" />
+  </ItemGroup>
+</Project>

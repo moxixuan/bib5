@@ -1,0 +1,9 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "MyAccount": "我的账户",
+    "SamplePageMessage": "Internal模块的示例页面",
+    "Bib5.Frp.Agent:000001": "找不到HttpServer服务",
+    "Bib5.Frp.Agent:000002": "OAuth2状态码无效"
+  }
+}

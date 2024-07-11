@@ -1,0 +1,9 @@
+{
+  "culture": "en",
+  "texts": {
+    "MyAccount": "My account",
+    "SamplePageMessage": "A sample page for the Internal module",
+    "Bib5.Frp.Agent:000001": "Unable to find HttpServer service",
+    "Bib5.Frp.Agent:000002": "OAuth2 state is invalid"
+  }
+}

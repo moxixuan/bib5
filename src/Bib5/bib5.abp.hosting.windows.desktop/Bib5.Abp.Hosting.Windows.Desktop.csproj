@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Bib5.Abp.Hosting.Windows.Desktop</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netcoreapp8.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+    <PackageReference Include="Microsoft.Extensions.Options" />
+    <PackageReference Include="TaskScheduler" />
+    <PackageReference Include="Volo.Abp.Core" />
+    <PackageReference Include="Volo.Abp.Ddd.Domain" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\bib5.abp.hosting.aspnetcore.simplified\Bib5.Abp.Hosting.AspNetCore.Simplified.csproj" />
+    <ProjectReference Include="..\bib5.abp.hosting.dotnet.simplified\Bib5.Abp.Hosting.DotNet.Simplified.csproj" />
+    <ProjectReference Include="..\bib5.abp.hosting.simplified\Bib5.Abp.Hosting.Simplified.csproj" />
+    <ProjectReference Include="..\bib5.abp.hosting.windows\Bib5.Abp.Hosting.Windows.csproj" />
+  </ItemGroup>
+</Project>

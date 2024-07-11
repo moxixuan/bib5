@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Bib5.Abp.Hosting.Console.Domain.Shared</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netcoreapp8.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Bib5.Abp.Hosting.Console.Localization.Console.en.json" />
+    <None Remove="Bib5.Abp.Hosting.Console.Localization.Console.zh-Hans.json" />
+    <EmbeddedResource Include="Bib5.Abp.Hosting.Console.Localization.Console.en.json" LogicalName="Bib5.Abp.Hosting.Console.Localization.Console.en.json" />
+    <EmbeddedResource Include="Bib5.Abp.Hosting.Console.Localization.Console.zh-Hans.json" LogicalName="Bib5.Abp.Hosting.Console.Localization.Console.zh-Hans.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Core" />
+    <PackageReference Include="Volo.Abp.Localization" />
+    <PackageReference Include="Volo.Abp.Localization.Abstractions" />
+    <PackageReference Include="Volo.Abp.VirtualFileSystem" />
+  </ItemGroup>
+</Project>

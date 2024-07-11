@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<AssemblyName>Bib5.Abp.Hosting.Auth.Client</AssemblyName>
+		<GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+		<TargetFramework>netcoreapp8.0</TargetFramework>
+	</PropertyGroup>
+	<PropertyGroup>
+		<LangVersion>11.0</LangVersion>
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+	</PropertyGroup>
+	<PropertyGroup />
+	<ItemGroup>
+	  <PackageReference Include="Volo.Abp.Core" />
+	  <PackageReference Include="Volo.Abp.Http.Client" />
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="Microsoft.Extensions.Configuration.Abstractions">
+			<HintPath>C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\8.0.5\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+		</Reference>
+		<Reference Include="Microsoft.Extensions.Http">
+			<HintPath>C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\8.0.5\Microsoft.Extensions.Http.dll</HintPath>
+		</Reference>		
+		<Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+			<HintPath>C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\8.0.5\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+</Project>

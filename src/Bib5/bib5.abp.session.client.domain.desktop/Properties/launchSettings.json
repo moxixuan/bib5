@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Bib5.Abp.Session.Client.Domain.Desktop": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:53970;http://localhost:53971"
+    }
+  }
+}
