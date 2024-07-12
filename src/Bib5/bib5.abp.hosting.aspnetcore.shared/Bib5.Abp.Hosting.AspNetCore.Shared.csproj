@@ -4,6 +4,7 @@
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
     <OutputType>Library</OutputType>
     <TargetFramework>netcoreapp8.0</TargetFramework>
+	  <IsPackable>true</IsPackable>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
