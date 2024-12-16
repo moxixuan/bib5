@@ -57,7 +57,7 @@ public static class SerilogConfigurationHelper
                 false,
                 (TimeSpan?)null,
                 RollingInterval.Day,
-                false,
+                true,  // 启用当文件达到限制大小时滚动
                 (int?)120,
                 (Encoding)null,
                 (FileLifecycleHooks)null,
