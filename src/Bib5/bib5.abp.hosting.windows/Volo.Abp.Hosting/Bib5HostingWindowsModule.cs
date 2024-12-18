@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Runtime.InteropServices;
 using System.Runtime.Versioning;
 using System.Security.AccessControl;
 using System.Windows;
@@ -22,7 +23,8 @@ public class Bib5HostingWindowsModule : AbpModule
 
 	public override void OnPostApplicationInitialization(ApplicationInitializationContext context)
 	{
-		IConfiguration requiredService = context.ServiceProvider.GetRequiredService<IConfiguration>();
+		if (!RuntimeInformation.IsOSPlatform(OSPlatform.Windows)) return;
+        IConfiguration requiredService = context.ServiceProvider.GetRequiredService<IConfiguration>();
 		if (context.ServiceProvider.GetRequiredService<IOptions<RegistryEnvironmentOptions>>().Value.RegistryEnvironment.Enable)
 		{
 			string appName = Bib5AppConfigurationExtensions.GetAppName(requiredService);
